@@ -1,0 +1,473 @@
+<html>
+<head>
+	<title>Character Quiz</title>
+	<style>
+		h1 {
+			text-align: center;
+		}
+	
+		p {
+			font-family: "Arial";
+			font-size: 16px;
+			font-weight: 900;
+		}
+		
+		img {
+			display:block;
+			background:red;
+			width: 100%
+		}
+		image{
+			display:block;
+			width:100%
+		}
+		
+		.ques01 {
+			opacity: 0;
+			-webkit-animation: fadeIn ease-in 1;
+			-moz-animation: fadeIn ease-in 1;
+			animation: fadeIn ease-in 1;
+			
+			-webkit-animation-fill-mode: forwards;
+			-moz-animation-fill-mode: forwards;
+			animation-fill-mode: forwards;
+			
+			-webkit-animation-duration: 1s;
+			-moz-animation-duration: 1s;
+			animation-duration: 1s;
+		}
+		@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+		@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+		@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+		
+
+	</style>
+</head>
+	<body>
+		<h1>What kind of character are you?</h1>
+		<br>
+		<br>
+			<div class="box fade-in one" id="pic"> 
+			<center>
+			<img class="ques01" src="http://t2.gstatic.com/images?q=tbn:ANd9GcSS4038p46B6EXv1w0vF8OUuK98u6MB-zbX87T1Tvvty1D1X8ET" />
+			</center>
+			</div>
+		<blockquote>
+			<br>
+			<p>What position do you find yourself in when an incident occurs?</p>
+			<form id = 'character'>
+			<input type="radio" name="situation" id="instigator" value="Instigator">
+			<label for="instigator">You are the person who instigates the incident in the first place.</label>
+			<br>
+			<input type="radio" name="situation" id="main" value="Main">
+			<label for="main">You find yourself at the center of the incident whether you like it or not, and try to resolve it in some way.</label>
+			<br>
+			<input type="radio" name="situation" id="foil" value="Foil">
+			<label for="foil">You sit back and enjoy watching the situation unfold.</label>
+			<br>
+			<input type="radio" name="situation" id="heroine" value="Heroine">
+			<label for="heroine">You go to help the person caught in the center of the situation.</label>
+			<br>
+			<br>
+			<p>Someone offers you an ice cream cone. What do you do?</p>
+			<input type="radio" name="situation2" id="instigator" value="Instigator">
+			<label for="instigator">Take the ice cream and throw it back at the person's face! Make them rue the day they dared to give you ice cream!</label>
+			<br>
+			<input type="radio" name="situation2" id="main" value="Main">
+			<label for="main">Accept the ice cream.</label>
+			<br>
+			<input type="radio" name="situation2" id="foil" value="Foil">
+			<label for="foil">You make the deduction that there must be something horribly wrong with the ice cream for the person to give you one. You walk away pretending to not have noticed.</label>
+			<br>
+			<input type="radio" name="situation2" id="heroine" value="Heroine">
+			<label for="heroine">Take it and ask if the person would like to eat with you.</label>
+			<br>
+			<br>
+			<p>An old gentleman needs help walking across the street. What do you do?</p>
+			<input type="radio" name="situation3" id="instigator" value="Instigator">
+			<label for="instigator">You take him part way and then bail to see if he gets hit.</label>
+			<br>
+			<input type="radio" name="situation3" id="main" value="Main">
+			<label for="main">You help him across the street then go on your way.</label>
+			<br>
+			<input type="radio" name="situation3" id="foil" value="Foil">
+			<label for="foil">You notice the man looks to be somewhat wealthy, so you agree to help him in exchange for monetary compensation.</label>
+			<br>
+			<input type="radio" name="situation3" id="heroine" value="Heroine">
+			<label for="heroine">You have a meeting with your crush in less than twenty minutes so you literally pick up the man and sprint across the street with him, ignoring his wailing.</label>
+			<br>
+			<br>
+			<p>There's a big red button. A guard says not to push it. Your response?</p>
+			<input type="radio" name="situation4" id="instigator" value="Instigator">
+			<label for="instigator">Knock him out, throw him out the window, sip some tea you randomly have and then push the button while maniacly laughing.</label>
+			<br>
+			<input type="radio" name="situation4" id="main" value="Main">
+			<label for="main">You decide not to push it. I mean really, it definitely is not a muffin button.</label>
+			<br>
+			<input type="radio" name="situation4" id="foil" value="Foil">
+			<label for="foil">You push the button out of pure spite for the guard.</label>
+			<br>
+			<input type="radio" name="situation4" id="heroine" value="Heroine">
+			<label for="heroine">You would be hated by the main character if you did that. So no.</label>
+			<br>
+			<br>
+			<p>Your life-long rival challenges you to a d- d- d- d- duel! How do you respond?</p>
+			<input type="radio" name="situation5" id="instigator" value="Instigator">
+			<label for="instigator">You agree, but once his back his turned you pull out a hammer and attack!</label>
+			<br>
+			<input type="radio" name="situation5" id="main" value="Main">
+			<label for="main">You accept his challenge, looking forward to the match to come.</label>
+			<br>
+			<input type="radio" name="situation5" id="foil" value="Foil">
+			<label for="foil">Disregard him like he doesn't exist</label>
+			<br>
+			<input type="radio" name="situation5" id="heroine" value="Heroine">
+			<label for="heroine">You accept, hoping to show off all your good points to a certain someone who just so happens to be nearby.</label>
+			<br>
+			<br>
+			<p>Robots are attacking the city! What should you do?</p>
+			<input type="radio" name="situation6" id="instigator" value="Instigator">
+			<label for="instigator">Nothing. You were the one that let them loose.</label>
+			<br>
+			<input type="radio" name="situation6" id="main" value="Main">
+			<label for="main">You decide to gather your team of whoever and defeat the robot menace! Probably with another robot or something.</label>
+			<br>
+			<input type="radio" name="situation6" id="foil" value="Foil">
+			<label for="foil">You notice that one guy who purposefully spilled their drink on you get stomped by one of the robots. You give the robot a thumbs-up.</label>
+			<br>
+			<input type="radio" name="situation6" id="heroine" value="Heroine">
+			<label for="heroine">You see your crush attempting to battle the robots and you force him/her into letting you help him/her.</label>
+			<br>
+			<br>
+			<p>You see a litter of puppies in a cardboard box. What do you do?</p>
+			<input type="radio" name="situation7" id="instigator" value="Instigator">
+			<label for="instigator">You do something so vile that I can't even type it here.</label>
+			<br>
+			<input type="radio" name="situation7" id="main" value="Main">
+			<label for="main">You take them home with you and try to find good homes for those you can't keep.</label>
+			<br>
+			<input type="radio" name="situation7" id="foil" value="Foil">
+			<label for="foil">You sit down in front of them eating your sandwich without giving them anything, and then walk away, finding them to be too costly to bother.</label>
+			<br>
+			<input type="radio" name="situation7" id="heroine" value="Heroine">
+			<label for="heroine">You take them all home with you to have an excuse to bribe your crush to come over.</label>
+			<br>
+			<br>
+			<p>How much do you eat?</p>
+			<input type="radio" name="situation8" id="instigator" value="Instigator">
+			<label for="instigator">I eat?</label>
+			<br>
+			<input type="radio" name="situation8" id="main" value="Main">
+			<label for="main">You eat so much that people around you are horrified.</label>
+			<br>
+			<input type="radio" name="situation8" id="foil" value="Foil">
+			<label for="foil">You see the guy who has everyone scared by how much he eats. You take some of his food and eat it in front of him.</label>
+			<br>
+			<input type="radio" name="situation8" id="heroine" value="Heroine">
+			<label for="heroine">You eat a modest amount.</label>
+			<br>
+			<br>
+			<p>You discover that your closet is some sort of time machine! What do you do with it?</p>
+			<input type="radio" name="situation9" id="instigator" value="Instigator">
+			<label for="instigator">Go back in time and take Hitler's place.</label>
+			<br>
+			<input type="radio" name="situation9" id="main" value="Main">
+			<label for="main">Destroy the closet, it's power is too great.</label>
+			<br>
+			<input type="radio" name="situation9" id="foil" value="Foil">
+			<label for="foil">Use it to go back in time and become a billionaire.... or just stare at it thinking of what you can do with it, but deciding against it because it requires effort.</label>
+			<br>
+			<input type="radio" name="situation9" id="heroine" value="Heroine">
+			<label for="heroine">You go back to make yourself ACTUALLY show off GOOD POINTS during that duel earlier to your crush that so happened to be nearby at that point in time.</label>
+			<br>
+			<br>
+			<p>Someone drops their wallet. What do you do?</p>
+			<input type="radio" name="situation10" id="instigator" value="Instigator">
+			<label for="instigator">Hell yeah! Free money!</label>
+			<br>
+			<input type="radio" name="situation10" id="main" value="Main">
+			<label for="main">You could return the wallet to it's owner, but you have to use the money to help beat the robot menace! The owner understands and let's you have their wallet.</label>
+			<br>
+			<input type="radio" name="situation10" id="foil" value="Foil">
+			<label for="foil">Demand $50 for finding their wallet. If they do not have $50, take a coupon you found stuck in their wallet.</label>
+			<br>
+			<input type="radio" name="situation10" id="heroine" value="Heroine">
+			<label for="heroine">Return the wallet.</label>
+			<br>
+			<br>
+			</form>
+			<input type="button" id="quizButton" value="Select">
+		</blockquote>
+	<p id="resultParagraph"></p>
+	<p id="resultParagraph2"></p>
+	
+	</body>
+<script>
+	var myCharacters = ['Protagonist', 'Antagonist', 'Foil', 'Love interest'];
+	var points = [0,0,0,0];
+	
+	function init() {
+		var button = document.getElementById('quizButton');
+		button.onclick = checkQuiz;
+	}
+	
+	function checkQuiz() {
+		var situation;
+		var situation2;
+		var situation3;
+		var situation4;
+		var situation5;
+		var situation6;
+		var situation7;
+		var situation8;
+		var situation9;
+		var situation10;
+		var inputs = document.getElementsByName('situation');
+		situation = findValue(inputs);
+		switch(situation) {
+			case 'Instigator':
+				points[1]++;
+				break;
+			case 'Main':
+				points[0]++;
+				break;
+			case 'Foil':
+				points[2]++;
+				break;
+			case 'Heroine':
+				points[3]++;
+				break;
+			}
+		inputs = document.getElementsByName('situation2');
+		situation2 = findValue(inputs);
+		switch(situation2){
+			case 'Instigator':
+				points[1]++;
+				break;
+			case 'Main':
+				points[0]++;
+				break;
+			case 'Foil':
+				points[2]++;
+				break;
+			case 'Heroine':
+				points[3]++;
+				break;
+		}
+		inputs = document.getElementsByName('situation3');
+		situation3 = findValue(inputs);
+		switch(situation3){
+			case 'Instigator':
+				points[1]++;
+				break;
+			case 'Main':
+				points[0]++;
+				break;
+			case 'Foil':
+				points[2]++;
+				break;
+			case 'Heroine':
+				points[3]++;
+				break;
+		}
+		inputs = document.getElementsByName('situation4');
+		situation4 = findValue(inputs);
+		switch(situation4){
+			case 'Instigator':
+				points[1]++;
+				break;
+			case 'Main':
+				points[0]++;
+				break;
+			case 'Foil':
+				points[2]++;
+				break;
+			case 'Heroine':
+				points[3]++;
+				break;
+		}
+		inputs = document.getElementsByName('situation5');
+		situation5 = findValue(inputs);
+		switch(situation5){
+			case 'Instigator':
+				points[1]++;
+				break;
+			case 'Main':
+				points[0]++;
+				break;
+			case 'Foil':
+				points[2]++;
+				break;
+			case 'Heroine':
+				points[3]++;
+				break;
+		}
+		inputs = document.getElementsByName('situation6');
+		situation6 = findValue(inputs);
+		switch(situation6){
+			case 'Instigator':
+				points[1]++;
+				break;
+			case 'Main':
+				points[0]++;
+				break;
+			case 'Foil':
+				points[2]++;
+				break;
+			case 'Heroine':
+				points[3]++;
+				break;
+		}
+		inputs = document.getElementsByName('situation7');
+		situation7 = findValue(inputs);
+		switch(situation7){
+			case 'Instigator':
+				points[1]++;
+				break;
+			case 'Main':
+				points[0]++;
+				break;
+			case 'Foil':
+				points[2]++;
+				break;
+			case 'Heroine':
+				points[3]++;
+				break;
+		}
+		inputs = document.getElementsByName('situation8');
+		situation8 = findValue(inputs);
+		switch(situation8){
+			case 'Instigator':
+				points[1]++;
+				break;
+			case 'Main':
+				points[0]++;
+				break;
+			case 'Foil':
+				points[2]++;
+				break;
+			case 'Heroine':
+				points[3]++;
+				break;
+		}
+		inputs = document.getElementsByName('situation9');
+		situation9 = findValue(inputs);
+		switch(situation9) {
+			case 'Instigator':
+				points[1]++;
+				break;
+			case 'Main':
+				points[0]++;
+				break;
+			case 'Foil':
+				points[2]++;
+				break;
+			case 'Heroine':
+				points[3]++;
+				break;
+			}
+			inputs = document.getElementsByName('situation10');
+			situation10 = findValue(inputs);
+			switch(situation10) {
+				case 'Instigator':
+					points[1]++;
+					break;
+				case 'Main':
+					points[0]++;
+					break;
+				case 'Foil':
+					points[2]++;
+					break;
+				case 'Heroine':
+					points[3]++;
+					break;
+				}
+			
+			maxScore = 0;
+			maxIndex = 0;
+			var test = 0;
+			var thing = true;
+			for (var i=0; i<points.length; i++) {
+				if (points[i] > maxScore) {
+					maxIndex = i;
+					maxScore = points[i];
+				}
+				/*if (points[0] == points[1] && points[0] == maxIndex) {
+					displayCharacter2(situation);
+					thing=false;
+				}*/
+			}	
+			for (var j=0; j<points.length; j++){
+				if (points[j] == maxScore){
+					situation=myCharacters[j]
+					displayCharacter(situation);
+				}
+			}
+			/*situation = myCharacters[maxIndex];
+			displayCharacter(situation);*/
+}
+	
+	
+	function findValue(inputs) {
+		var checked;
+		for (var i=0; i<inputs.length; i++) {
+			if (inputs[i].checked) {
+				//alert(inputs[i].value);
+				checked = inputs[i].value;
+				return(checked);
+			}
+		}
+		if(!checked) {
+			alert('Choose an answer.');
+		}
+	}
+	function displayCharacter(situation) {
+		var image = document.createElement('img');
+		image.className = 'character';
+		var source = document.getElementById('resultParagraph');
+		var text = 'You are a(n) ' + situation + ' character!';
+		
+		switch(situation) {
+			case 'Protagonist':
+				image.src = 'https://s-media-cache-ak0.pinimg.com/736x/6d/81/8d/6d818dd5abdf139070378a11c1120b00.jpg';
+				break;
+			case 'Antagonist':
+				image.src = 'https://s-media-cache-ak0.pinimg.com/736x/76/3c/99/763c99967a83f25a790bf6c1a85851f3.jpg';
+				break;
+			case 'Foil':
+				image.src = 'http://i715.photobucket.com/albums/ww151/tuvok1983/Nikinek_SpockKirk.jpg';
+				break;
+			case 'Love interest':
+				image.src = 'http://www.scifiheaven.net/wp-content/uploads/2013/12/1-tauriel-690x423.jpg';
+				break;
+		}
+		source.appendChild(image);
+		source.innerHTML += '<br>' + text;
+	}
+	
+	function displayCharacter2(situation) {
+		var image = document.createElement('img');
+		image.className = 'character';
+		var source = document.getElementById('resultParagraph2');
+		var text = 'You are a(n): ' + situation;
+		
+		switch(situation) {
+			case 'Protagonist':
+				image.src = '';
+				break;
+			case 'Antagonist':
+				image.src ='';
+				break;
+			case 'Foil':
+				image.src ='';
+				break;
+			case 'Love interest':
+				image.src ='';
+				break;
+		}
+		source.appendChild(image);
+		source.innerHTML += '<br>' + text;
+	}
+	window.onload = init;
+</script>
+</html>
